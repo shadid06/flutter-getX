@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_getx/utils/route_names.dart';
 import 'package:get/get.dart';
 
-import 'my_detail_page.dart';
+
 
 class ContentPage extends StatefulWidget {
   const ContentPage({Key? key}) : super(key: key);

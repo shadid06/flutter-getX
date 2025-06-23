@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_getx/content_page.dart';
+import 'package:flutter_getx/views/content_page.dart';
 import 'package:flutter_getx/utils/route_names.dart';
 import 'package:get/get.dart';
 

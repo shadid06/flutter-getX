@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx/content_page.dart';
-import 'package:flutter_getx/my_detail_page.dart';
-import 'package:flutter_getx/my_home_page.dart';
-import 'package:flutter_getx/utils/route_names.dart';
+import 'package:flutter_getx/routes/routes.dart';
+
 import 'package:get/get.dart';
 
 void main() {
@@ -18,18 +16,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter GetX',
       theme: ThemeData(
-    
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       initialRoute: '/',
       // home: const MyHomePage(),
-      getPages: [
-        GetPage(name: RouteNames.homePage, page: () => const MyHomePage()),
-        GetPage(name: RouteNames.content, page: () => const ContentPage()),
-        GetPage(name: RouteNames.detailPage, page: () => const DetailPage()),
-      ],
+      getPages: Routes.routes,
     );
   }
 }
-
